@@ -1,6 +1,8 @@
 package mar;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 public class App extends JFrame {
     int WIDTH = 500;
@@ -13,6 +15,13 @@ public class App extends JFrame {
 
         setBounds(X, Y, WIDTH, HEIGHT);
         setVisible(true);
+
+        var panel = new JPanel();
+
+        var saveButton = new JButton("Click Me");
+
+        panel.add(saveButton);
+        add(panel);
     }
 
     public void run() {
